@@ -1,0 +1,9 @@
+{
+  "id": "custom",
+  "channels": ["custom"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

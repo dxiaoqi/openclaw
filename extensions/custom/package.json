@@ -1,0 +1,28 @@
+{
+  "name": "openclaw-custom-channel",
+  "version": "0.0.3",
+  "description": "Custom channel plugin for OpenClaw - webhook-based integration for chat and group chat",
+  "type": "module",
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "channel": {
+      "id": "custom",
+      "label": "Custom",
+      "selectionLabel": "Custom (Webhook)",
+      "docsPath": "/channels/custom",
+      "docsLabel": "custom",
+      "blurb": "Connect your own chat backend via webhook for direct and group messages.",
+      "order": 95
+    },
+    "install": {
+      "npmSpec": "openclaw-custom-channel",
+      "localPath": "extensions/custom",
+      "defaultChoice": "npm"
+    }
+  }
+}
